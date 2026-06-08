@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import make_blobs         #默认按照高斯发布来生成数据集
 from sklearn.metrics import calinski_harabasz_score          #评价指标
 
-#参1：样本数 参2：特征数 参3：标签数量 参4：标准差 参5：随机数种子
+#参1：样本数 参2：特征数 参3：簇的位置 参4：标准差 参5：随机数种子
 x,y = make_blobs(n_samples=1000,n_features=2,centers=[[-1,-1],[0,0],[1,1],[2,2]],cluster_std=1.0,random_state=0)
 
 #2.绘制图像
